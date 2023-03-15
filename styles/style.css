@@ -7,8 +7,10 @@ body {
 }
 
 .nav-itens {
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
     padding: 10px;
+    letter-spacing: 0.15em;
+    font-size: small;
 }
 
 .nav-itens:hover {
