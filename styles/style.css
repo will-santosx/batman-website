@@ -1,0 +1,17 @@
+
+body {
+    min-height: 100vh !important;
+    background: rgb(18,20,27);
+    background: linear-gradient(300deg, rgba(18,20,27,1) 15%, rgba(49,49,49,0.9977668854633617) 100%);
+    overflow-y: auto;
+}
+
+.nav-itens {
+    transition: .3s ease-in-out;
+    padding: 10px;
+}
+
+.nav-itens:hover {
+    color: rgb(250, 204, 21);
+    border-bottom: solid 1px rgb(250, 204, 21);
+}
