@@ -1,9 +1,17 @@
 
 body {
-    min-height: 100vh !important;
     background: rgb(18,20,27);
     background: linear-gradient(300deg, rgba(18,20,27,1) 15%, rgba(49,49,49,0.9977668854633617) 100%);
-    overflow-y: auto;
+    background-size: cover !important;
+    position: relative;
+    z-index: 0;
+}
+
+#the-batman-main-image {
+    position: absolute;
+    top: 0;
+    left: 12rem;
+    z-index: -1;
 }
 
 .nav-itens {
