@@ -1,9 +1,8 @@
 
 body {
     background: rgb(18,20,27);
-    background: linear-gradient(300deg, rgba(18,20,27,1) 15%, rgba(49,49,49,0.9977668854633617) 100%);
-    background-size: cover !important;
-    position: relative;
+    background: linear-gradient(300deg, rgba(18,20,27,1) 15%, rgba(49,49,49,1) 100%);
+    min-height: 100vmax !important;
     z-index: 0;
 }
 
