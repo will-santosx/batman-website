@@ -1,5 +1,5 @@
 
-const apiKey = '81e21b87c0628a89b900ad9a6fe6df24';
+const apiKey = 'INSIRA_AQUI_SUA_API_KEY';
 const searchTerm = 'Batman';
 
 fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchTerm}`)
