@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    overflow: hidden !important;
+    overflow: hidden;
 }
 
 body {
@@ -30,4 +30,15 @@ body {
 .nav-itens:hover {
     color: rgb(250, 204, 21);
     border-bottom: solid 1px rgb(250, 204, 21);
+}
+
+.text-movie-title {
+    font-size: 8px;
+    margin: 5px;
+}
+
+@media (max-width: 640px) {
+    .text-movie-title {
+      font-size: 13px;
+    }
 }

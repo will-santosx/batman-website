@@ -10,6 +10,7 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searc
 
     movies.forEach(movie => {
       const posterPath = movie.poster_path;
+      const titleMovie = movie.title;
       const posterUrl = `https://image.tmdb.org/t/p/w500${posterPath}`;
 
       const imageSlideContainer = document.createElement('li');
@@ -18,6 +19,11 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searc
       const posterImage = document.createElement('img');
       posterImage.src = posterUrl;
 
+      //const movieDisplayTitle = document.createElement('h2');
+      //movieDisplayTitle.classList.add('text-movie-title')
+      //movieDisplayTitle.textContent = titleMovie
+    
+      //imageSlideContainer.appendChild(movieDisplayTitle);
       imageSlideContainer.appendChild(posterImage);
       slidesDiv.appendChild(imageSlideContainer);
     });
@@ -25,9 +31,10 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searc
       type: 'carousel',
       perView: 10,
       autoplay: 1500,
-      arrows: true,
+      gap: 20,
+      loop: true,
       breakpoints: {
-        640: { perView: 2
+        640: { perView: 3
         },
       }
     }).mount();
