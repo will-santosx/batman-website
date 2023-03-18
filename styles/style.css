@@ -1,11 +1,18 @@
 
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow: hidden !important;
+}
+
 body {
     background: rgb(18,20,27);
     background: linear-gradient(300deg, rgba(18,20,27,1) 15%, rgba(49,49,49,1) 100%);
     height: 100vh !important;
     background-size: cover;
     z-index: 0;
-    overflow-y: hidden;
 }
 
 #the-batman-main-image {
