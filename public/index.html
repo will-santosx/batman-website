@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:300,400,500,600,700&display=swap" />
+    <!-- libs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.0/css/glide.core.css" integrity="sha512-esCylxvZEDuZ+3L2JRa6wYVNDihaDw5fDBUPZ9X9igrCIMHILsPiR4A7+dKmqqzvvIH8lzRlRV4b4V7Q9es/ew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </head>
 <body>
     <div class="flex flex-col justify-between h-full">
@@ -52,18 +55,16 @@
         src="../components/images/batman-arkham-knight.png" alt="">
         <footer class="bg-black backdrop-blur-sm text-white w-full flex flex-col p-5 bg-opacity-75">
             <span class="mb-5 text-lg md:text-xs">Filmes do Batman</span>
-            <div class="swiper">
-                <div class="swiper-wrapper flex flex-row items-start justify-start gap-10">
-                    <div class="swiper-slide"><img class="w-28 md:w-20" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iGZX91hIqM9Uu0KGhd4MUaJ0Rtm.jpg"></div>
-                    <div class="swiper-slide"><img class="w-28 md:w-20" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/s40Ji11SBKaEYDgJmDc0ifklM59.jpg"></div>
-                    <div class="swiper-slide"><img class="w-28 md:w-20" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/h7UkdzOIar06vjTZWurwkSQXr4L.jpg"></div>
+            <div class="glide w-full">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides w-28 md:w-20 flex flex-row items-start">
+                    </ul>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
         </footer>
     </div>
-
     <script src="src/app.js"></script>
+    <script src="src/navbar-home.js"></script>
+    <script src="src/footer-slide.js"></script>
 </body>
 </html>
